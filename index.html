@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Конвертер регистров</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+
+    <script
+            src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+            integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+            crossorigin="anonymous"></script>
+    <script src="case.js"></script>
+</head>
+<body>
+<h1>Case Converter</h1>
+<form class="tools-form decoder-form">
+    <div class="decoder-form-big">
+        <div class="als-columns">
+            <div class="col col-6 col-tablet-12">
+                <div class="als-input-clear-wrapper"><textarea id="source" data-save-value="true" name="source" placeholder="Исходный текст"></textarea><span class="als-input-clear-button"></span></div>
+            </div>
+            <div class="col col-6 col-tablet-12 col-result">
+                <div class="als-input-copy-available-check"><textarea id="target" name="target" placeholder="Результат"></textarea><span class="als-input-copy-button"><i></i></span></div>
+            </div>
+        </div>
+        <p>
+        <div id="method-tabs" class="als-tabs als-tabs-small"><a data-val="0">ВЕРХНИЙ РЕГИСТР</a><a data-val="1" class="selected">нижний регистр</a><a data-val="2">Заглавные Буквы</a><a data-val="3">иНВЕРСИЯ рЕГИСТРА</a><a data-val="4">По предложениям</a></div>
+        </p>
+    </div>
+</form>
+</body>
+</html>

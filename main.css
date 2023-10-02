@@ -1,0 +1,218 @@
+*,:after,:before{
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box
+}
+html{
+    -webkit-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;
+    -webkit-font-smoothing:antialiased
+}
+body,html{
+    height:auto;
+    min-height:100%
+}
+body{
+    margin:0;
+    font-family:Helvetica,sans-serif;
+    overflow-y:scroll;
+    font-feature-settings:"kern" 1,"liga" 0
+}
+a:link{
+    color:#0089ff;
+    text-decoration:none;
+    border-bottom:1px solid rgba(0,137,255,.3);
+    -webkit-transition:color .3s ease,border-color .3s ease;
+    transition:color .3s ease,border-color .3s ease
+}
+a:visited{
+    color:#b40eb4;
+    border-color:rgba(180,14,180,.3)
+}
+a:link:hover,a:visited:hover{
+    color:#f41224;
+    border-color:rgba(244,18,36,.3)
+}
+.als-tabs{
+    font-family:Helvetica,sans-serif
+}
+.als-tabs{
+    text-align:center;
+    font-size:18px;
+    margin:1.9em 10px 2em;
+    position:relative
+}
+@media (max-width:900px){
+    .als-tabs{
+        font-size:17px
+    }
+}
+@media (max-width:500px){
+    .als-tabs{
+        font-size:15px
+    }
+}
+.als-tabs-small{
+    font-size:16px
+}
+@media (max-width:900px){
+    .als-tabs-small{
+        font-size:15px
+    }
+}
+@media (max-width:500px){
+    .als-tabs-small{
+        font-size:14px
+    }
+    .als-tabs a{
+        margin:0 .3em .5em
+    }
+}
+.als-tabs a{
+    font-size:inherit;
+    padding:.5em 1.2em;
+    text-decoration:none;
+    border:none;
+    position:relative;
+    display:inline-block
+}
+.als-tabs a{
+    color:#000;
+    background:rgba(0,0,0,.05);
+    cursor:pointer
+}
+.als-tabs a:hover{
+    background:rgba(0,0,0,.1);
+    color:#000!important
+}
+.als-tabs a:not(.selected){
+    -webkit-transition:background .2s cubic-bezier(.55,.08,.06,.97);
+    transition:background .2s cubic-bezier(.55,.08,.06,.97)
+}
+.als-tabs a.selected{
+    color:#fff
+}
+.als-tabs a.selected:hover{
+    color:#fff!important
+}
+.als-tabs a.selected{
+    background:#4149f2
+}
+.als-tabs a.selected{
+    cursor:default
+}
+.als-columns:after{
+    content:' ';
+    display:block;
+    font-size:0;
+    height:0;
+    visibility:hidden;
+    clear:both
+}
+.als-columns{
+    margin-left:-1em;
+    margin-right:-1em
+}
+.als-columns .col-6{
+    float:left;
+    padding-left:1em;
+    padding-right:1em;
+    width:50%
+}
+@media (max-width:900px){
+    .als-columns .col-tablet-12{
+        float:left;
+        padding-left:1em;
+        padding-right:1em
+    }
+    .als-columns .col-tablet-12{
+        width:100%
+    }
+}
+.tools-form{
+    font-family:Helvetica,sans-serif
+}
+.tools-form{
+    font-size:75%
+}
+.tools-form textarea{
+    font-size:inherit;
+    font-family:inherit
+}
+.tools-form textarea{
+    width:100%;
+    padding:.5em 1em;
+    border:none;
+    -webkit-border-radius:6px;
+    border-radius:6px;
+    background:#fff
+}
+.tools-form textarea{
+    height:20em;
+    border: 1px solid #ccc;
+}
+.decoder-form-big{
+    max-width:1200px;
+    margin:0 auto
+}
+h1 {
+    text-align: center;
+}
+@media (max-width:900px){
+    .decoder-form-big .col-result{
+        margin-top:2em
+    }
+}
+.als-input-clear-wrapper textarea{
+    padding-right:2.2em
+}
+.als-input-clear-wrapper{
+    position:relative
+}
+.als-input-clear-button{
+    -webkit-transition:all .3s cubic-bezier(.55,.08,.06,.97);
+    transition:all .3s cubic-bezier(.55,.08,.06,.97);
+    cursor:pointer;
+    position:absolute;
+    top:.5em;
+    right:.5em;
+    line-height:0;
+    text-align:center;
+    z-index:5;
+    font-weight:700;
+    visibility:hidden;
+    -webkit-transform:scale(0);
+    -ms-transform:scale(0);
+    transform:scale(0);
+    width:1.1em;
+    height:1.1em;
+    background:url(https://img.artlebedev.ru/svalka/header-2016/v2/images/form-clear.png);
+    background-size:100% 100%;
+    opacity:.5
+}
+.als-input-copy-button{
+    -webkit-transition:all .3s cubic-bezier(.55,.08,.06,.97);
+    transition:all .3s cubic-bezier(.55,.08,.06,.97);
+    cursor:pointer;
+    position:absolute;
+    top:.5em;
+    right:.5em;
+    width:1.15em;
+    height:1.15em;
+    -webkit-transform:scale(0);
+    -ms-transform:scale(0);
+    transform:scale(0)
+}
+.als-input-copy-button:before{
+    content:'';
+    display:block;
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    background:url(https://img.artlebedev.ru/svalka/header-2016/v2/images/form-copy.png);
+    background-size:100% 100%;
+    -webkit-transition:all .3s cubic-bezier(.55,.08,.06,.97);
+    transition:all .3s cubic-bezier(.55,.08,.06,.97);
+    opacity:.5
+}
